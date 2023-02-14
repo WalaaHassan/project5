@@ -1,0 +1,337 @@
+/* font-family: 'Alata', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Tajawal', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Fraunces', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sassy Frass', cursive;
+font-family: 'Tajawal', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+
+/* font-family: 'Alata', sans-serif;
+font-family: 'Bitter', serif;
+font-family: 'Fraunces', serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Sassy Frass', cursive;
+font-family: 'Tajawal', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    main-font: 'Roboto', sans-serif;
+    secondery-font-family: 'Sassy Frass', cursive;
+}
+
+header {
+ 
+    background: radial-gradient(circle, rgba(86,83,76,0.5), transparent),
+    url("../images/hero5.jpg") no-repeat center center / cover;
+    height: fit-content;
+    position: relative;
+
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(14, 11, 11, .4);
+    color: white;
+    padding: 20px 0 20px 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header nav h2 {
+    font-family: 'Sassy Frass', cursive;
+    margin-right: 100px;
+    font-size: xx-large;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+
+    letter-spacing: 2px;
+}
+
+nav ul li {
+    padding-top: 12px;
+}
+
+nav .icons {
+    margin-left: 5%;
+    padding-top: 12px;
+}
+
+nav .icons i {
+    padding-right: 30px;
+
+}
+
+.panner {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.panner h1 {
+    font-size: 77px;
+    margin-top: 100px;
+}
+
+.panner p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+.panner .btn {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(14, 11, 11, .4);
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    padding-top: 17px;
+    margin: 50px 0 200px 0;
+}
+
+.panner .btn:hover {
+    background-color: aliceblue;
+    color: rgba(82, 31, 11, 0.432);
+    border: solid rgba(14, 11, 11, .7) 1px;
+}
+
+header::after {
+    content: url(/images/bread.png);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #fff 50%, transparent 0);
+
+}
+
+/*start of container1*/
+.container1 {
+    /* margin-top: 100px; */
+    display:flex;
+    flex-wrap: wrap;
+
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+   
+    text-align: center;
+}
+
+.art {
+    text-align: center;
+}
+.container1 .art h2{
+    font-size: 45px;
+    margin-bottom: 7px;
+    color:rgb(90, 78, 62);
+    font-family: 'Bitter', serif;
+}
+.container1 .art h4{
+    margin-bottom: 50px;
+    color:rgb(163, 118, 59);
+}
+.art .p1{
+    font-family: 'Roboto', sans-serif ;
+    margin-bottom: 50px;                                   
+}
+.art div h3{
+    color:rgb(100, 91, 80);
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+}
+.art .hr h5{
+padding: 13px 50px;
+font-size: x-large;
+color:rgb(100, 91, 80)
+}
+.art .hr hr{
+    color:rgb(218, 204, 188);
+    width:170px;
+    margin:auto;
+}
+.art .chef{
+    display:flex;
+    margin-top: 30px;
+}
+.art .hr{
+    margin-top:23px;
+}
+.string {
+    color: #999;
+    display: flex; 
+    margin:auto;
+                    
+    /* justify-self: center; */
+}
+
+.art .string h2 {
+    font-family: 'Sassy Frass', cursive;
+    color: #999;
+   
+}
+.images{
+   display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position :relative;
+}
+.images img{
+    /* width:49% */
+}
+
+.images .over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.images h2 {
+    width: 30%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 20px;
+    color: #a47d5e;
+    font-weight: normal;
+    text-align: center;
+}
+@media (max-width:550px){
+    .container1 {
+        width: 95%;
+        margin:auto;
+    }
+}
+@media (max-width:900px){
+    .container1{
+        width: 75%;
+        margin:auto;
+    }
+}
+@media (min-width:1200){
+    .art , .images{
+        width:35%
+    }
+    
+}
+.h2{
+    color:rgb(163, 118, 59)
+}
+
+
+/* start of tasty */
+
+.tasty{
+    width: 100%;
+    
+    background: url(/images/bg-slides2.jpg) no-repeat center center / cover;;
+}
+.stars{
+    color:white;
+}
+.field{
+    width:170px;
+    height:170px;
+    background: url(/images/field.png) no-repeat center center / cover;;
+    text-align: center;
+    padding-top: 50px;
+}
+.field h3{
+    font-size: 1.2rem;
+    color: #a47d5e;
+}
+.field h1{
+    font-size: 4rem;
+    color: #dfc691;
+    margin: 0;
+}
+.field p{
+    color: #979285;
+    font-weight: bold;
+}
+.tasty .tasty1 .tastyImg{
+    background: url(/images/pancakes.jpg) no-repeat center center / cover;
+}
+.tasty1{
+    width:70% ;
+    height:75%;
+    margin:auto ;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+.tastyTxt{
+    background: url(/images/mill.png) no-repeat center center / cover;
+    padding: 30px 15px;
+}
+.tastyTxt h2{
+    color: #56534c;
+    font-size:31px;
+    font-weight: 700;
+    font-family: 'Alegreya', serif;
+}
+.tastyTxt h4{
+    color: #a47d5e;
+}
+.tastyTxt img{
+    margin-top:70px;
+    font-size: 12px;
+    margin-bottom: 50px   ;
+}
+/* end of tasty */
+
+/* start of breakfast */
+.breakfast{
+    background: url(/images/breakfast.jpg) no-repeat center center / cover;
+}
+/* end of breakfast */

@@ -1,0 +1,664 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+header {
+
+    background: radial-gradient(circle, rgba(86, 83, 76, 0.5), transparent),
+        url("../images/hero5.jpg") no-repeat center center / cover;
+    height: fit-content;
+    position: relative;
+
+}
+
+nav {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(14, 11, 11, .4);
+    color: white;
+    padding: 20px 0 20px 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header nav h2 {
+    font-family: 'Sassy Frass', cursive;
+    margin-right: 100px;
+    font-size: xx-large;
+
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+@media(max-width:750px){
+    nav ul{
+        display:block
+    }
+   nav .icons{
+display:block;
+    }
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover {
+    color: #dfc691;
+}
+
+nav ul li {
+    padding-top: 12px;
+}
+
+nav .icons {
+    margin-left: 5%;
+    padding-top: 12px;
+}
+
+nav .icons i {
+    padding-right: 30px;
+
+}
+
+.panner {
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+.panner h1 {
+    font-size: 77px;
+    margin-top: 100px;
+}
+
+.panner p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    margin-top: 50px;
+}
+
+.panner .btn,
+.morning .btn,
+.prep .btn {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(14, 11, 11, .4);
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    padding-top: 17px;
+    margin: 50px 0 200px 0;
+}
+
+.panner .btn:hover,
+.morning .btn:hover,
+.prep .btn:hover {
+    background-color: aliceblue;
+    color: #a47d5e;
+    ;
+    border: solid rgba(14, 11, 11, .7) 1px;
+}
+
+header::after {
+    content: url(/images/bread.png);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, #fff 50%, transparent 0);
+
+}
+
+/*start of container1*/
+.container1 {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width:550px) {
+    .container1 {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media (max-width:900px) {
+    .container1 {
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media (min-width:1200) {
+
+    .container1 .art,
+    .container1 .images {
+        width: 35% !important;
+    }
+}
+
+.art {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px
+}
+
+.container1 .art h2 {
+    font-size: 45px;
+    margin-bottom: 7px;
+    color: rgb(90, 78, 62);
+    font-family: 'Bitter', serif;
+}
+
+.container1 .art h4 {
+    margin-bottom: 50px;
+    color: rgb(163, 118, 59);
+}
+
+.art .p1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+
+}
+
+.art div h3 {
+    color: rgb(100, 91, 80);
+    font-family: 'Bitter', serif;
+    font-size: 25px;
+}
+
+.art .hr h5 {
+    padding: 13px 50px;
+    font-size: x-large;
+    color: rgb(100, 91, 80)
+}
+
+.art .hr hr {
+    color: rgb(218, 204, 188);
+    width: 170px;
+    margin: auto;
+}
+
+.art .chef {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.art .hr {
+    margin-top: 23px;
+}
+
+.art .string {
+    text-align: center;
+    margin: auto;
+    font-family: 'Sassy Frass', cursive;
+    color: #999;
+    font-size: xx-large;
+}
+
+
+.images {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.images .over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.images h2 {
+    width: 30%;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 20px;
+    color: #a47d5e;
+    font-weight: normal;
+    text-align: center;
+}
+
+.h2 {
+    color: rgb(163, 118, 59)
+}
+
+
+/* start of tasty */
+
+.tasty {
+    width: 100%;
+    background: url(/images/bg-slides2.jpg) no-repeat center center / cover;
+    ;
+}
+
+.tasty .tasty1 {
+    display: flex;
+}
+
+.stars {
+    color: white;
+}
+
+.field,
+.fields {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.field {
+    background: url(/images/field.png) no-repeat center center / cover;
+    ;
+    position: absolute;
+    top: 9%;
+    right: 0%
+}
+
+@media(min-width:800px) {
+    .field {
+        top: 5%;
+        right: -5%;
+    }
+}
+
+.field h3,
+.fields h3 {
+    font-size: 1.2rem;
+    color: #a47d5e;
+}
+
+.field h1,
+.fields h1 {
+    font-size: 4rem;
+    color: #dfc691;
+    margin: 0;
+}
+
+.field p,
+.fields p {
+    color: #979285;
+    font-weight: bold;
+}
+
+.tasty .tasty1 .tastyImg {
+    background: url(/images/pancakes.jpg) no-repeat center center / cover;
+    height: 40vh;
+    width: 100%;
+}
+
+.tasty1 {
+    width: 70%;
+    height: 777%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tastyTxt {
+    background:
+        /* radial-gradient( #fff  )  */
+        url(/images/mill.png) no-repeat center center / cover;
+    background-color: #fff;
+    padding: 30px 15px;
+}
+
+.tastyTxt h2 {
+    color: #56534c;
+    font-size: 31px;
+    font-weight: 700;
+    font-family: 'Alegreya', serif;
+}
+
+.tastyTxt h4 {
+    color: #a47d5e;
+    margin-bottom: 50px;
+    margin-top: 12px;
+}
+
+.tastyTxt .pics {
+    margin: auto;
+}
+
+.tastyTxt img {
+    margin-top: 70px;
+    font-size: 12px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    transition: .5s;
+
+}
+
+.tastyTxt img:hover {
+    transform: scale(.91);
+    -webkit-transform: scale(.91);
+    -moz-transform: scale(.91);
+    -ms-transform: scale(.91);
+    -o-transform: scale(.91);
+}
+
+
+@media(max-width:500px) {
+    .tasty1 {
+        width: 100%
+    }
+
+}
+
+/* end of tasty */
+
+/* start of breakfast */
+.breakfast {
+    background: url(/images/breakfast.jpg) no-repeat center center / cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.breakfast .text {
+    text-align: center;
+    padding-top: 100px;
+    line-height: 30px;
+    font-size: larger;
+    margin-bottom: 50px;
+    margin: auto;
+}
+
+.breakfast h2,
+.breakfast h3 {
+    color: white;
+    font-size: xx-large;
+
+}
+
+.breakfast h2 {
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.breakfast .text .title p {
+    font-size: large;
+    color: #c8a593;
+    margin-bottom: 35px;
+}
+
+.breakfast .text .menu .price {
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.r {
+    color: #c2beba;
+    margin-bottom: 25px;
+}
+
+.price {
+    color: #dfc691;
+}
+
+.morning {
+    background: url(/images/rye.png) no-repeat center center;
+    width: 388px;
+    background-color: white;
+    color: #56534c;
+    text-align: center;
+    border: #56534c dashed 1px;
+    padding: 50px 3%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.morning img {
+    margin: 0;
+    padding: 0;
+}
+
+.morning .pp {
+    margin: auto;
+    width: 250px;
+}
+
+.morning .pp p {
+    display: inline-block;
+}
+
+.morning h1 {
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.morning .btn {
+    margin: auto;
+    margin-top: 100px
+}
+
+@media(min-width:900px) {
+    .morning {
+        width: 40%
+    }
+}
+
+@media(min-width:1200px) {
+    .morning {
+        width: 35%
+    }
+}
+
+@media(min-width:1400px) {
+    .morning {
+        width: 29%
+    }
+}
+
+/* end of breakfast */
+
+.delight {
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f1e9;
+    text-align: center;
+}
+.delightTitle{
+    margin:auto;
+}
+.delightTitle img {
+    margin: auto
+}
+
+.delightTitle h2 {
+    font-size: 45px;
+    color: #56534c;
+    font-family: 'Alegreya', serif;
+}
+
+.delightTitle h4 {
+    font-size: 16px;
+    color: #a47d5e;
+    
+    margin-bottom: 60px;
+}
+
+.glass {
+    margin-bottom: 45px;
+}
+
+.glass h3 {
+    font-size: 2rem;
+    color: #a47d5e;
+}
+
+.glass p {
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.prep {
+    position: relative;
+}
+
+.btn2 {
+    position: absolute;
+    bottom: -185px;
+    left: 12px
+}
+
+.preps {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+}
+
+.preps .two {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.prep img {
+    border: white solid 12px;
+    width: 100%;
+    height: 550px;
+}
+
+.fields {
+    background-color: rgba(241, 235, 235, .9);
+}
+
+.fields:hover {
+    background: url(/images/field.png) no-repeat center center / cover;
+}
+@media(min-width:740px) {
+    .glasses {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:950) {
+    .prep {
+        width: 80%;
+    }
+    .glasses {
+        width: 300px;
+        display:block;
+    }
+    .delights {
+        display: flex;
+        justify-content: center;
+        /* grid-template-columns: 25% 50%; */
+    }
+    .btn2 {
+        transform: rotateZ(-90deg);
+    }
+}
+
+footer {
+    background: #f3f1e9;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #35332f;
+}
+
+footer .special {
+    font-family: 'Sassy Frass', cursive;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer .special p {
+    font-size: 50px;
+}
+
+@media(max-width:900px) {
+    .show {
+        display: none;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer .special p {
+        display: inline-block;
+        margin: 20px 12px;
+    }
+
+    footer ul li a {
+        margin-bottom: 10px;
+    }
+}
+
+@media(min-width:900px) {
+    footer .show {
+        width: 35%
+    }
+
+    footer .show hr {
+        display:block;
+        width: 500px;
+        margin-bottom: 30px;
+    }
+
+    footer ul {
+        display: flex;
+        justify-content:baseline;
+    }
+
+    footer ul li a {
+        display: inline-block;
+        margin-top: 30px;
+        margin-right:0px;
+        margin-bottom: 30px;
+    }
+footer .special p{
+    margin: 40px 40px;
+}
+footer div:not(.special){
+    margin-top:70px;
+       
+   
+}
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+}
